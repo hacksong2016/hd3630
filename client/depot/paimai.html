@@ -1,0 +1,28 @@
+<template name="paimai">
+    <header>
+        <div class="header">
+            拍卖{{fish.fname}}
+        </div>
+    </header>
+    <div class="yy">
+        <div class="yy-avatar" style="background-image:url(/kefu.jpg)"></div>
+        <div class="yy-line animated fadeInUp" style="-webkit-animation-delay:.5s">你好,我是您的专属顾问</div>
+        <div class="yy-line yy-blod  animated fadeInUp" style="-webkit-animation-delay:1s">李莉</div>
+        <div class="yy-line  animated fadeInUp" style="-webkit-animation-delay:1.5s">请填写一些信息</div>
+    </div>
+    <div class="animated fadeInUp s-pad" style="-webkit-animation-delay:2s">
+        <div class="s-block">
+            <div class="s-title">截止时间</div>
+            <div><input id="stime" type="datetime-local"/></div>
+        </div>
+        <div class="s-block">
+            <div class="s-title">起拍价格</div>
+            <div><input id="sbegin" type="tel" placeholder="¥3000" /></div>
+        </div>
+    </div>
+    <div class="footer-fix"></div>
+    <div class="se-footer _flex">
+    	<a href="tel:1234567890" class="_flex-1"><i class="fa fa-phone"></i> 联系顾问 </a>
+    	<div class="se-next _flex-1" > 开始拍卖 </div>
+    </div>
+</template>

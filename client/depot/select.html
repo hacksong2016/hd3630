@@ -1,0 +1,41 @@
+<template name="select">
+    <header>
+        <div class="header">
+            预约上门服务
+        </div>
+    </header>
+    <div class="yy">
+        <div class="yy-avatar" style="background-image:url(/kefu.jpg)"></div>
+        <div class="yy-line animated fadeInUp" style="-webkit-animation-delay:.5s">你好,我是您的专属顾问</div>
+        <div class="yy-line yy-blod  animated fadeInUp" style="-webkit-animation-delay:1s">李莉</div>
+        <div class="yy-line  animated fadeInUp" style="-webkit-animation-delay:1.5s">您可以选择一位心仪的厨师</div>
+    </div>
+    <div class="animated fadeInUp s-pad" style="-webkit-animation-delay:2s">
+    	<div class="s-block">
+    		<div class="s-title">服务厨师</div>
+    		{{#each cooks}}
+	    		<div class="se-item _flex">
+	    			<div class="se-avatar" style="background-image:url({{thumb}})"></div>
+	    			<div class="se-info _flex-1">
+	    				<div class="se-name">{{name}}</div>
+	    				<div class="se-star">
+	    					<i class="fa fa-star"></i>
+	    					<i class="fa fa-star"></i>
+	    					<i class="fa fa-star"></i>
+	    					<i class="fa fa-star"></i>
+	    					<i class="fa fa-star"></i>
+	    				</div>
+	    				<div class="se-desc">{{desc}}</div>
+
+	    			</div>
+	    			<div class="se-conf {{checkst}}">选择</div>
+	    		</div>
+    		{{/each }}
+    	</div>
+    </div>
+    <div class="footer-fix"></div>
+    <div class="se-footer _flex">
+    	<a href="tel:1234567890" class="_flex-1"><i class="fa fa-phone"></i> 联系顾问 </a>
+    	<div class="se-next _flex-1" > 下一步 </div>
+    </div>
+</template>

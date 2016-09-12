@@ -1,0 +1,74 @@
+<template name="bill">
+    <header>
+        <div class="header">
+            预约上门服务
+        </div>
+    </header>
+    <div class="yy">
+        <div class="yy-avatar" style="background-image:url(/kefu.jpg)"></div>
+        <div class="yy-line animated fadeInUp" style="-webkit-animation-delay:.5s">你好,我是您的专属顾问</div>
+        <div class="yy-line yy-blod  animated fadeInUp" style="-webkit-animation-delay:1s">李莉</div>
+        <div class="yy-line  animated fadeInUp" style="-webkit-animation-delay:1.5s">已收到您的要求会尽快联系您</div>
+    </div>
+    <div class="animated fadeInUp s-address" style="-webkit-animation-delay:2s">
+        <div class="s-block">
+            <div class="s-title">用餐时间</div>
+            <div class="s-address-ct">{{format bill.timeAt}}</div>
+        </div>
+    </div>
+    <div class="animated fadeInUp s-address" style="-webkit-animation-delay:2s">
+        <div class="s-block">
+            <div class="s-title">用餐地址</div>
+            <div class="s-address-ct">{{bill.address}}</div>
+        </div>
+    </div>
+    <div class="animated fadeInUp s-pad" style="-webkit-animation-delay:2.5s">
+    	<div class="s-block">
+            <div class="s-title">菜品</div>
+            {{#each bill.goods}}
+                <div class="se-item _flex">
+                    <div class="se-avatar" style="background-image:url({{thumb}})"></div>
+                    <div class="se-info _flex-1">
+                        <div class="se-name">{{name}}</div>
+                        <div class="se-star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="se-desc">{{desc}}</div>
+
+                    </div>
+                </div>
+            {{/each }}
+        </div>
+
+        <div class="s-block">
+            <div class="s-title">其它服务</div>
+            {{#each bill.others}}
+                <div class="se-item _flex">
+                    <div class="se-avatar" style="background-image:url({{thumb}})"></div>
+                    <div class="se-info _flex-1">
+                        <div class="se-name">{{name}}</div>
+                        <div class="se-star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                        <div class="se-desc">{{desc}}</div>
+
+                    </div>
+                </div>
+            {{/each }}
+        </div>
+
+    </div>
+    {{#if compare bill.step 4}}
+    <div class="se-footer _flex">
+        <div class="se-next _flex-1" > 确认 </div>
+    </div>
+    {{/if }}
+</template>

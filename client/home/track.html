@@ -1,0 +1,32 @@
+<template name="homeTrack">
+    <header>
+        <div class="header">
+           我的余额
+         <a href="/home" class="left" style="font-size:18px;width:100px;padding-left:10px;"><i class="fa fa-angle-left"></i></a>
+         <a class="right" id="openInput" style="font-size:14px;width:100px;padding-right:10px;">提现</a>
+        </div>
+    </header>
+    <div class="ht-top _flex">
+        <div style="width:100%;">
+            <div class="img-avatar" style="background-image:url({{user.avatar}});"></div>
+        </div>
+        <div class="ht-top-item ht-top-left"><b>{{all}}</b>收入</div>
+        <div class="xian"></div>
+        <div class="ht-top-item ht-top-right"><b>{{pointk}}</b>余额</div>
+    </div>
+    
+     <div class="ht-bar _flex">
+        <div class="ht-bar-input _flex-1"><input type="text" id="tx" placeholder="金额" /></div>
+        <div class="ht-bar-btn _flex"><div id="ht-bar-btn" class="_flex-1">提现</div> <div class="_flex-1" id="ht-bar-btn2">充值</div></div>
+    </div>
+
+    <div class="warp" >
+       {{#each tracks}}
+        <div class="track-itme">
+            <div class="track-time">{{format createAt}}</div>
+            <div class="track-reason">[{{typeName}}]{{desc}} </div>
+            <div class="track-point">{{fix balance}}</div>
+        </div>
+       {{/each}}
+    </div>
+</template>

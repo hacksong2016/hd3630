@@ -1,0 +1,23 @@
+<template name="qrcode">
+	<header>
+		<div class="header">
+			转赠{{fish.fname}}
+			<a class="left" href="/depot"><i class="fa fa-angle-left"></i></a>
+		</div>
+	</header>
+	 <div class="yy">
+        <div class="yy-avatar" style="background-image:url({{fish.fthumb}})">
+        	<div class="yy-dd">
+        		<div class="yy-kg" ><b>{{fish.fkg}}</b> Kg</div>
+        		<div class="yy-temp" ><b>{{fish.ftemp}}</b> ℃</div>
+        	</div>
+        	
+        </div>
+        <div class="yy-line animated fadeInUp" style="-webkit-animation-delay:.5s">{{ format fish.fcreateAt}}</div>
+        <div class="yy-line yy-blod  animated fadeInUp" style="-webkit-animation-delay:1s">{{fish.fwhere}}</div>
+        <div class="yy-qrcode  animated fadeInUp" style="-webkit-animation-delay:1.5s;padding:15px 0 25px 0">
+           {{> QrCode text=shouquan }}
+        </div>
+        <div class="yy-line animated fadeInUp" style="-webkit-animation-delay:2s"><i class="fa fa-qrcode"></i> 出示给对方微信扫一扫 </div>
+    </div>
+</template>

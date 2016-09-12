@@ -1,0 +1,43 @@
+<template name="paimaiList">
+	<header>
+		<div class="header">
+			拍卖行
+		</div>
+	</header>
+	<div>
+		{{#each paimais}}
+
+		<a class="d-item" href="/paimai/item?id={{_id}}">
+			<div class="pp-user _flex">
+				<div class="pp-user-avatar" style="background-image:url({{owner.avatar}})"></div>
+				<div class="pp-user-name">{{owner.name}}</div>
+				<div class="pp-user-price _flex-1">
+					{{#if checkPrice}}
+					已出价: ¥{{fix myprice}}
+					{{else}}
+					起拍价: ¥{{fix startPrice}}
+					{{/if }}
+				</div>
+			</div>
+			<div class="pp-user _flex">
+				<div class="pp-user-name  _flex-1" >{{{djs endAt}}}</div>
+				<div class="pp-user-price"> 出价: {{count users }}  位 </div>
+			</div>
+			<div class="d-info _flex">
+				<div class="d-thumb _flex-1" style="background-image:url({{fish.fthumb}})"></div>
+				<div class="d-info-block">
+					<div class="d-temp-tip">当前温度</div>
+					<div class="d-temp"><b>{{fish.ftemp}}</b>℃</div>
+					<div class="d-temp-tip">重量</div>
+					<div class="d-temp"><b>{{fish.fkg}}</b>Kg</div>
+				</div>
+			</div>
+			<div class="d-tips">
+				{{fish.fwhere}} 
+				{{fish.fname}}
+				<div class="d-order" >{{format fish.fcreateAt}} </div>
+			</div>
+		</a >
+		{{/each }}
+	</div>
+</template>

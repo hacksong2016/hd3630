@@ -1,0 +1,46 @@
+<template name="depot">
+	<header>
+		<div class="header">
+			我的冷库
+		</div>
+	</header>
+	<div>
+		{{#each fishes}}
+
+		<a class="d-item" href="{{check}}">
+			<div class="d-info _flex">
+				<div class="d-thumb _flex-1" style="background-image:url({{fthumb}})"></div>
+				<div class="d-info-block">
+					<div class="d-temp-tip">当前温度</div>
+					<div class="d-temp"><b>{{ftemp}}</b>℃</div>
+					<div class="d-temp-tip">重量</div>
+					<div class="d-temp"><b>{{fkg}}</b>Kg</div>
+				</div>
+			</div>
+			<div class="d-tips">
+				{{fwhere}} 
+				{{fname}}
+				{{format fcreateAt}}
+
+				{{#if ispaimai}}
+					<div class="d-order" >拍卖中 <i class="fa fa-angle-right"></i><i class="fa fa-angle-right"></i> </div>
+				{{/if}}
+				{{#if iszhongchou}}
+					<div class="d-order" >众筹中 <i class="fa fa-angle-right"></i><i class="fa fa-angle-right"></i> </div>
+				{{/if}}
+				{{#if isorder}}
+					<div class="d-order" >已消费</div>
+				{{/if}}
+				{{#if isnone}}
+					<div class="d-order" >预约 <i class="fa fa-angle-right"></i><i class="fa fa-angle-right"></i> </div>
+				{{/if}}
+				
+			</div>
+		</a>
+		{{/each }}
+	</div>
+	<div class="footer-fix"></div>
+	<a class="d-footer" href="/yuyue" >
+		立即预约海钓航期
+	</a>
+</template>

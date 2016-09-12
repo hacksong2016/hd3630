@@ -1,0 +1,43 @@
+<template name="paimaiItem">
+    <header>
+        <div class="header">
+            拍卖出价
+        </div>
+    </header>
+    <div class="yy">
+        <div class="yy-avatar" style="background-image:url(/kefu.jpg)"></div>
+        <div class="yy-line animated fadeInUp" style="-webkit-animation-delay:.5s">你好,我是您的专属顾问</div>
+        <div class="yy-line yy-blod  animated fadeInUp" style="-webkit-animation-delay:1s">李莉</div>
+        <div class="yy-line  animated fadeInUp" style="-webkit-animation-delay:1.5s">您要竞拍的是这条{{paimai.fish.fname}} ? </div>
+    </div>
+    <div class="yy animated fadeInUp" style="-webkit-animation-delay:2s">
+        <div class="yy-avatar" style="background-image:url({{paimai.fish.fthumb}})">
+            <div class="yy-dd">
+                <div class="yy-kg"><b>{{paimai.fish.fkg}}</b> Kg</div>
+                <div class="yy-temp"><b>{{paimai.fish.ftemp}}</b> ℃</div>
+            </div>
+        </div>
+        <div class="yy-line animated fadeInUp">{{ format paimai.fish.fcreateAt}}</div>
+        <div class="yy-line yy-blod  animated fadeInUp">{{paimai.fish.fwhere}}</div>
+    </div>
+    {{#if checkPrice}} {{else}}
+    <div class="animated fadeInUp s-pad" style="-webkit-animation-delay:2.5s">
+        <div class="s-block">
+            <div class="s-title">您的出价</div>
+            <div>
+                <input id="price" type="tel" placeholder="¥{{paimai.startPrice}}" />
+            </div>
+        </div>
+    </div>
+    {{/if }}
+    <div class="footer-fix"></div>
+    {{#if checkPrice}}
+    <div class="se-footer2 ">
+        您已出价：<b>¥{{fix myprice}}</b>
+    </div>
+    {{else}}
+    <div class="se-footer _flex">
+        <div class="se-next _flex-1"> 出价 </div>
+    </div>
+    {{/if }}
+</template>

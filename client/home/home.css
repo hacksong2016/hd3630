@@ -1,0 +1,238 @@
+.home .banner{
+	width:100%;
+	height:74px;
+	background-size:cover;
+	background-color: #fff;
+	background-position: center;
+}
+.home .banner .img{
+	margin:15px 5px 10px 10px;
+	width:49px;
+	height:49px;
+	border-radius:50%;
+	overflow:hidden;
+	background-color:rgb(247,247,247);
+}
+.home .banner .img input{
+	opacity: 0;
+	display:block;
+	width:100%;
+	position: absolute;
+	left:0px;
+	top:0px;
+	height:60px;
+	-webkit-appearance: none;
+}
+.home .banner .img div{
+	width:49px;
+	height:49px;
+	background-size:cover;
+	background-position: center;
+	position: relative;
+	margin:0px auto;
+}
+.list{padding:0 !important;}
+.home .banner .info{
+ 	color:black;
+ 	line-height:15px;
+ 	padding-top:18px;
+ 	padding-left:10px;
+}
+.info {
+	font-size: 14px;
+}
+.role-change{
+	position: absolute;
+	top:15px;
+	right:15px;
+	color:#eee;
+	font-size:12px;
+	width:25px;
+	height:25px;
+	text-align: center;
+	line-height:23px;
+	border-radius: 8px;
+}
+.home .banner .home{
+	position: absolute;
+	top:15px;
+	left:15px;
+	color:#eee;
+	font-size:16px;
+	width:25px;
+	height:25px;
+	border:1px solid #eee;
+	text-align: center;
+	line-height:23px;
+	border-radius: 8px;
+}
+.home .banner .info .point{
+ 	padding-top:8px;
+}
+.home  .list{
+	background:#fff;
+	margin-top:10px;
+}
+.home .list-q{
+	background:#fff;
+	margin-top:10px;
+}
+.home .list-q .link{
+	display:block;
+	position: relative;
+	padding:10px 10px 10px 10px;
+	line-height:20px;
+	border-bottom: 1px solid #eee;
+	background-repeat: no-repeat;;
+	background-size:25px;
+	background-position: 10px center;
+	text-align: center;
+}
+.hl2 a:first-child{
+	border-right:1px solid #eee;
+}
+.home .list .link{
+	display:block;
+	position: relative;
+	padding:10px 10px 10px 35px;
+	line-height:20px;
+	border-bottom: 1px solid #eee;
+	background-repeat: no-repeat;;
+	background-size:20px;
+	background-position: 10px center;
+}
+.home .list .link2{
+	display:block;
+	position: relative;
+	padding:10px 10px 10px 15px;
+	line-height:20px;
+	border-bottom: 1px solid #eee;
+	background-repeat: no-repeat;;
+	background-size:20px;
+	color:#999;
+	background-position: 10px center;
+}
+.home .list .link2 b{
+	color:#08345e;
+}
+.home .list .link2 i{
+	position: absolute;
+	right:10px;
+	top:0px;
+	font-size:12px;
+	line-height:50px;
+}
+.home .list .link .fa-angle-right , .home .list .link .fa-sign-out{
+	position: absolute;
+	right:10px;
+	top:10px;
+	line-height:20px;
+	color:#bbb;
+
+}
+.home .status{
+	width:100%;
+}
+.home .status a{
+	text-align: center;
+	font-size:12px;
+	display:block;
+	padding:12px 0;
+}
+.home-yy{
+	background-image:url(/home-yy.jpg);
+}
+.home-jh{
+	background-image:url(/zhuye.png);
+}
+.home-zt{
+	background-image: url(/zhuangtai.jpg);
+}
+.home-zl{
+	background-image: url(/zhenliaojilu.png);
+}
+.home-hz{
+	background-image: url(/huanzhe.png);
+}
+.home-da{
+	background-image:url(/home-da.jpg);
+}
+.home-dd{
+	background-image:url(/home-dd.jpg);
+}
+.home-zx{
+	background-image:url(/home-zx.jpg);
+}
+.home-fq{
+	background-image:url(/home-fq.jpg);
+}
+.home-xx{
+	background-image:url(/shezhi.png);
+}
+.home-jf{
+	background-image:url(/home-jf.jpg);
+}
+.point-desc{
+	position: absolute;
+	bottom:10px;
+	right:10px;
+	font-size:12px;
+	color:#fff;
+}
+.home-qd{
+	width:100px;
+	position: absolute;
+	top:100px;
+	left:150px;
+	background:#08345e;
+	color:#fff;
+	text-align: center;
+	padding:5px 10px;
+	border-radius: 5px;
+	box-shadow:  0 0 3px #bbb;
+	display:none;
+}
+.home-zxc{
+	width:7px;
+	height:7px;
+	background:red;
+	border-radius: 50%;
+	position: absolute;
+	left:100px;
+	top:16px;
+	display:none;
+}
+.home-order-c{
+	width:7px;
+	height:7px;
+	background:red;
+	border-radius: 50%;
+	margin-left:10px;
+	position: absolute;
+	top:10px;
+	left:5px;
+	display:none;
+}
+.home-order-st{
+	position: relative;
+}
+.home-cert b{
+	position:absolute;
+	right:25px;
+	top:0px;
+	line-height:40px;
+	font-size:12px;
+	color:#bbb;
+}
+
+.home-vaild{
+	float: left;
+	width: 21px;
+	height: 12px;
+	border-radius: 8px;
+	margin-left: 5px;
+	background-image: url(/renzheng.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}

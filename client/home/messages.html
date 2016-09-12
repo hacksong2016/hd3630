@@ -1,0 +1,34 @@
+<template name="homeMessages">
+    <div class="page page-with-header-footer home">
+        <header>
+            <div class="header">
+                我的私信
+                <a href="/home" class="left"><i class="fa fa fa-chevron-left"></i></a>
+            </div>
+        </header>
+        {{#each messages}}
+        <div class="hm-item">
+            {{#if ismine}}
+            <div class="hm-name">发送:{{tname}}</div>
+            {{else}}
+            <div class="hm-name">来自:{{fname}}</div>
+            {{/if }}
+            <div class="hm-time">{{format createAt}}</div>
+            <div>{{content}}</div>
+            {{#if ismine}} {{else}}
+            <div class="hm-btn">回复</div>
+            {{/if }}
+        </div>
+        {{/each}}
+    </div>
+    <div class="d-bg animated bounceInUp">
+        <div id="instant-form">
+            <div class="form-ct ">
+                <textarea id="instant-input" placeholder="说点什么"></textarea>
+                <div class="sendbtn"> 发送</div>
+                <div class="d-tips"><i class="fa fa-check-circle-o"></i>我已同意用户使用协议</div>
+                <div class="d-i-c"><i class="fa fa-remove"></i></div>
+            </div>
+        </div>
+    </div>
+</template>

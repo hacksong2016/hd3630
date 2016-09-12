@@ -1,0 +1,42 @@
+.payBg{
+	position:fixed;
+	width:100%;
+	height:100%;
+	top:0px;
+	left:0px;
+	z-index:99999;
+	background-color:rgba(0,0,0,.6);
+	display:none;
+}
+.payFooter{
+	width:100%;
+	height:60px;
+}
+.payForAlipay{
+	background-image:url(/pay-alipay.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	border-right:1px solid #eee;
+}
+.payForWechat{
+	background-image:url(/pay-wechat.png);
+	background-repeat:no-repeat;
+	background-position:center;
+}
+.payFooterTitle{
+	width:100%;
+	height:30px;
+	background:#eee;
+	text-align:center;
+	font-weight:800;
+	line-height:25px;
+}
+.payFooterWarp{
+	width:100%;
+	height:90px;
+	background:#fff;
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	
+}

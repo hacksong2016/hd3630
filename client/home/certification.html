@@ -1,0 +1,49 @@
+<template name="homeCertification">
+    <div class="page page-with-header-footer home">
+        <header>
+            <div class="header">
+                医师认证
+                <a href="/home" class="left"><i class="fa fa fa-chevron-left"></i></a>
+            </div>
+        </header>
+        <div class="ff-form">
+            {{>thumbSelector name='头像'}}
+             <div class="ff-line">
+                    <label>姓名</label>
+                    <input id="pa-name" type="text" placeholder="请输入您的姓名" />
+             </div>
+             <div class="ff-line">
+                    <label>性别</label>
+                    <select id="pa-sex">
+                        <option value="男">男</option>
+                        <option value="女">女</option>
+                    </select>
+                </div>
+                {{> departmentSelector }}
+               <!--  医生职称 -->
+                <div  class="ff-line" >
+                <label>职称</label>
+                    <select id="pa-title">
+                        <option value="主任医师">主任医师</option>
+                        <option value="副主任医师">副主任医师</option>
+                        <option value="主治医师">主治医师</option>
+                        <option value="住院医师">住院医师</option>
+                    </select>
+                
+                </div>
+
+                <fieldset class="ff-split">
+                    <legend>上传工作证或执业证书</legend>
+                </fieldset>
+                <div class="hc-tips">请确保姓名、医院职称、头像等信息的清晰可见上传资料仅用于认证使用</div>
+                <div class="hc-upload"  ><input  type="file" id="photo" /> </div>
+            
+                 <div class="ff-btn-group">
+                    <div class="ff-btn" id="pa-create">确认提交</div>
+                </div>
+
+                <div class="tCertification">您需要通过认证，才能开启更多功能</div>
+        </div>
+       
+    </div>
+</template>

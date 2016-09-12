@@ -1,0 +1,17 @@
+.mn-item{
+	display:block;
+	padding:10px 40px 10px 10px;
+	line-height:20px;
+	color:#333;
+	background:#fff;
+	position:relative;
+	font-size:14px;
+	border-bottom:1px solid #efefef;
+}
+.mn-item i{
+	position:absolute;
+	right:5px;
+	top:0px;
+	line-height:40px;
+	color:#999;
+}

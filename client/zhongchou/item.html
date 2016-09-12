@@ -1,0 +1,56 @@
+<template name="zhongchouItem">
+    <header>
+        <div class="header">
+            参与名人晚宴
+        </div>
+    </header>
+    <div class="yy">
+        <div class="yy-avatar" style="background-image:url(/kefu.jpg)"></div>
+        <div class="yy-line animated fadeInUp" style="-webkit-animation-delay:.5s">你好,我是您的专属顾问</div>
+        <div class="yy-line yy-blod  animated fadeInUp" style="-webkit-animation-delay:1s">李莉</div>
+        <div class="yy-line  animated fadeInUp" style="-webkit-animation-delay:1.5s">您要参与{{dinner.nickname}}分享Ta的收获? </div>
+        <div class="yy-line  animated fadeInUp" style="-webkit-animation-delay:2s"><i class="fa fa-clock-o"></i> {{format dinner.endAt}} </div>
+        <div class="yy-line  animated fadeInUp" style="-webkit-animation-delay:2.5s"><i class="fa fa-map-marker"></i> {{dinner.address}}</div>
+    </div>
+    <div class="yy animated fadeInUp" style="-webkit-animation-delay:3s">
+        <div class="yy-avatar" style="background-image:url({{dinner.fish.fthumb}})">
+            <div class="yy-dd">
+                <div class="yy-kg"><b>{{dinner.fish.fkg}}</b> Kg</div>
+                <div class="yy-temp"><b>{{dinner.fish.ftemp}}</b> ℃</div>
+            </div>
+        </div>
+        <div class="yy-line animated fadeInUp">{{ format dinner.fish.fcreateAt}}</div>
+        <div class="yy-line yy-blod  animated fadeInUp">{{dinner.fish.fwhere}}</div>
+    </div>
+    {{#if dinner.users}}
+    <div class="animated fadeInUp s-pad" style="-webkit-animation-delay:3.5s">
+        <div class="s-block">
+            <div class="s-title">晚宴嘉宾</div>
+            {{#each dinner.users}}
+                <div class="dn-item _flex">
+                    <div class="dn-avatar" style="background-image:url({{user.avatar}})"></div>
+                    <div class="dn-info _flex-1">
+                        <div class="dn-name">{{user.nickname}}</div>
+                        <div class="dn-star">
+                            {{#each larr user.level}}
+                            <i class="fa fa-star"></i>
+                            {{/each}}
+                        </div>
+                        <div class="dn-desc">{{user.desc}}</div>
+                    </div>
+                </div>
+            {{/each }}
+        </div>
+    </div>
+    {{/if }}
+    <div class="footer-fix"></div>
+    {{#if checkPrice}}
+    <div class="se-footer2 ">
+        您已报名参与请按时参加
+    </div>
+    {{else}}
+    <div class="se-footer _flex">
+        <div class="se-next _flex-1"> <i class="fa fa-wechat"></i> 支付  ¥{{fix checkUnit}} </div>
+    </div>
+    {{/if }}
+</template>

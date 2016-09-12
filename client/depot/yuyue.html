@@ -1,0 +1,20 @@
+<template name="yuyue">
+	<header>
+		<div class="header">
+			联系我的专属顾问
+		</div>
+	</header>
+	{{>yyheader}}
+	<div class="yuy-pad animated fadeInUp " style="-webkit-animation-delay:2.5s">
+		<div class="yuy-title">本季海钓航线</div>
+		{{#each travels}}
+		
+			<div class="yuy-item">
+				<div class="yuy-thumb" style="background-image:url({{thumb}})"></div>
+				<div class="yuy-address">{{address}}</div>
+				<div class="yuy-time">{{format travelAt}} ({{day}}天)</div>
+				<div class="yuy-user">{{count users}} /{{max}} 人 </div>
+			</div>
+		{{/each }}
+	</div>
+</template>

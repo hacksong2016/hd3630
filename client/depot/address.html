@@ -1,0 +1,28 @@
+<template name="address">
+    <header>
+        <div class="header">
+            预约上门服务
+        </div>
+    </header>
+    <div class="yy">
+        <div class="yy-avatar" style="background-image:url(/kefu.jpg)"></div>
+        <div class="yy-line animated fadeInUp" style="-webkit-animation-delay:.5s">你好,我是您的专属顾问</div>
+        <div class="yy-line yy-blod  animated fadeInUp" style="-webkit-animation-delay:1s">李莉</div>
+        <div class="yy-line  animated fadeInUp" style="-webkit-animation-delay:1.5s">在哪里享用您的{{fish.fname}}?</div>
+    </div>
+    <div class="animated fadeInUp s-pad" style="-webkit-animation-delay:2s">
+        <div class="s-block">
+            <div class="s-title">服务时间</div>
+            <div><input id="stime" type="datetime-local"/></div>
+        </div>
+    	<div class="s-block">
+    		<div class="s-title">服务地址</div>
+    		<div><textarea id="sarea" placeholder="例：北京市东城区青龙胡同35号和咖啡 "></textarea></div>
+    	</div>
+    </div>
+    <div class="footer-fix"></div>
+    <div class="se-footer _flex">
+    	<a href="tel:1234567890" class="_flex-1"><i class="fa fa-phone"></i> 联系顾问 </a>
+    	<div class="se-next _flex-1" > 下一步 </div>
+    </div>
+</template>

@@ -1,0 +1,32 @@
+.hp-content{
+	line-height:25px;
+	background:#fff;
+}
+.hp-content h1{
+	font-weight:800;
+	line-height:35px;
+	font-size:18px;
+	margin-top:15px;
+}
+.hp-content h2{
+	font-weight:800;
+	line-height:30px;
+	font-size:16px;
+	margin-top:10px;
+}
+.hp-content p{
+	font-size:14px;
+	text-indent: 24px;
+}
+.hp-table{
+	font-size:12px;
+	border-top:1px solid #bbb;
+	border-right:1px solid #bbb;
+	margin:15px auto;
+	width:100%;
+	text-align: center;
+}
+.hp-table th ,.hp-table td {
+	border-bottom:1px solid #bbb;
+	border-left:1px solid #bbb;
+}

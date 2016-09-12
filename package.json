@@ -1,0 +1,21 @@
+{
+    "server": {
+        "host": "101.200.154.237",
+        "username": "root",
+        "password": "Cattle0303",
+        "sshOptions": { "port" : 22 },
+        "env": {}
+    },
+    "setup": {
+        "mongo": true,
+        "path": "/alidata/www"
+    },
+    "deploy": {
+        "appName": "app",
+        "env": {
+            "MONGO_URL": "mongodb://localhost:27017/ygl",
+            "PORT": 80,
+            "ROOT_URL": "http://m.yigonglue.com"
+        }
+    } 
+}

@@ -1,0 +1,130 @@
+.img-avatar{
+	width:49px;
+	height:49px;
+	border-radius:50%;
+	background-size:100% 100%;
+	margin: 8px auto;
+}
+
+.track-itme{
+	width:100%;
+	border-bottom:1px solid #eee;
+	padding:15px;
+	background:#fff;
+	position:relative;
+}
+.track-time{
+	border-bottom:1px solid #bbb;
+	line-height:30px;
+	color:#666;
+	font-size:12px;
+}
+.track-reason{
+	line-height:25px;
+	padding:5px 0;
+	font-size:14px;
+
+}
+.track-point{
+	font-size:14px;
+	position:absolute;
+	right:15px;
+	top:20px;
+}
+.ht-top{
+	width:100%;
+	height: 144px;
+	background:rgb(255,255,255);
+	color:#fff;
+	position: relative;
+}
+
+.ht-top-item b{
+	line-height:40px;
+	font-size:22px;
+	display:block;
+	color:rgb(138,138,138);
+}
+.ht-top-left{
+	height: 24px;
+	text-align:center;
+	font-size:14px;
+	color:rgb(38,38,38); 
+	position: absolute;
+	bottom: 55px;
+	left: 85px;
+}
+.xian{
+	width: 1px;
+	height: 50px;
+	position: absolute;
+	top: 73px;
+	left: 50%;
+	background-color: rgb(235,235,235);
+}
+.ht-top-right{
+	height: 24px;
+	text-align:center;
+	font-size:14px;
+	color:rgb(38,38,38); 
+	position: absolute;
+	bottom: 55px;
+	right: 85px;
+}
+.ht-title{
+	border-top:1px solid #fff;	
+	line-height:40px;
+	text-align:center;
+	color:#666;
+	background:#fff;
+	/* border-bottom:1px solid #eee; */
+	position:relative;
+}
+.track-itme:nth-of-type(odd){ background:#efefef;}
+.track-itme:nth-of-type(even){ background:#fff;}
+.ht-bar{
+	padding:10px;
+	background:#fff;
+	border-top:1px solid rgb(247,247,247);
+	border-bottom:1px solid rgb(247,247,247);
+	
+}
+.ht-bar-w{
+	display:none;
+}
+#ht-bar-btn{
+	width:50px;
+	height: 28px;
+	text-align:center;
+	color:#fff;
+	letter-spacing: 0.3px;
+	border-radius: 6px;
+	background:rgba(30,30,30,.8);
+	line-height:30px;
+	font-size: 14px;
+	margin-left: 10px;
+}
+#ht-bar-btn2{
+	width:50px;
+	height: 28px;
+	text-align:center;
+	color:#fff;
+	letter-spacing: 0.3px;
+	border-radius: 6px;
+	background:rgb(213,1,49);
+	line-height:30px;
+	font-size: 14px;
+	margin-left: 10px;
+}
+#tx{
+	width:100%;
+	margin-top: 2px;
+	height: 25px;
+	padding-left:65px;
+	font-size:14px;
+	letter-spacing:0.3px;
+	outline:none;
+	-webkit-appearance: none;
+	border:0px;
+	color: rgb(138,138,138);
+}

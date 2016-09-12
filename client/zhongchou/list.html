@@ -1,0 +1,39 @@
+<template name="zhongchouList">
+	<header>
+		<div class="header">
+			名人晚宴众筹
+		</div>
+	</header>
+	<div>
+		{{#each dinners}}
+
+		<a class="d-item" href="/zhongchou/item?id={{_id}}">
+			<div class="pp-user _flex">
+				<div class="pp-user-avatar" style="background-image:url({{owner.avatar}})"></div>
+				<div class="pp-user-name">{{owner.name}} 发起的晚宴 </div>
+				<div class="pp-user-price _flex-1">
+					¥{{fix checkUnit}} 每位
+				</div>
+			</div>
+			<div class="pp-user _flex">
+				<div class="pp-user-name  _flex-1" >{{{djs endAt}}}</div>
+				<div class="pp-user-price"> 赴约: {{count users }} / {{num}} 位 </div>
+			</div>
+			<div class="d-info _flex">
+				<div class="d-thumb _flex-1" style="background-image:url({{fish.fthumb}})"></div>
+				<div class="d-info-block">
+					<div class="d-temp-tip">当前温度</div>
+					<div class="d-temp"><b>{{fish.ftemp}}</b>℃</div>
+					<div class="d-temp-tip">重量</div>
+					<div class="d-temp"><b>{{fish.fkg}}</b>Kg</div>
+				</div>
+			</div>
+			<div class="d-tips">
+				{{fish.fwhere}} 
+				{{fish.fname}}
+				<div class="d-order" >{{format fish.fcreateAt}} </div>
+			</div>
+		</a >
+		{{/each }}
+	</div>
+</template>

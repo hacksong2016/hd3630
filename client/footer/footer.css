@@ -1,0 +1,67 @@
+.footer{
+    position: fixed;
+    bottom:0px;
+    left:0px;
+    height:49px;
+    width:100%;
+    background-color: #fff;
+    border-top : 1px  solid  #bfbfbf ; 
+}
+
+.footer-item{
+    line-height:49px;
+    text-align: center;
+    position: relative;
+    display: block;
+}
+
+.footer-item-wenzi{
+    color: #666;
+    position: absolute;
+    width:100%;
+    height:100%;
+    padding-top:30px;
+    line-height:18px;
+    font-size:12px;
+    top:0px;
+    left:0px;
+    background-repeat: no-repeat;
+    background-size:23px 23px;
+    background-position: center 5px;
+}
+
+.footer-item-1{
+    background-image:url(/icon-o.png);
+}
+
+.footer-item-2{
+    background-image:url(/icon-t.png);
+}
+
+.footer-item-3{
+    background-image:url(/icon-th.png);
+}
+
+
+.active .footer-item-1{
+    background-image:url(/icon-one.png);
+    background-size: 23px 23px;
+    background-position: center 5px;
+
+}
+.active .footer-item-2{
+    background-image:url(/icon-two.png);
+    background-size: 23px 23px;
+    background-position: center 5px;
+
+}
+.active  .footer-item-3{
+    background-image:url(/icon-three.png);
+    background-size: 23px 23px;
+    background-position: center 5px;
+
+}
+
+.active .footer-item-wenzi{
+    color:rgba(30,30,30,.8);
+}

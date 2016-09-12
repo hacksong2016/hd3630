@@ -1,0 +1,39 @@
+<!-- <template name="footer">
+    <footer>
+    
+        <div class="_flex fl">
+
+        
+            <a href="/" class="_flex-1 {{#if fouces 'site' }} active {{/if }} footer-wenzi"> 
+						首页
+			</a> 
+         
+            <a href="/discuz/list" class="_flex-1 {{#if fouces 'discuz' }} active {{/if }}"><i class="fa fa-book"></i> 讨论</a> 
+
+            <a href="/home" class="_flex-1 {{#if fouces 'wd' }} active {{/if }}"><i class="fa fa-user"></i> 我<div class="footer-zxc"></div></a>
+
+        </div>
+    </footer>
+</template> -->
+
+<template name="footer">
+	<div class="footer _flex">
+		<a class="{{#if fouces 'site' }} active {{/if}} footer-item _flex-1" href="/">
+			<div class="footer-item-wenzi footer-item-1">
+				首页
+			</div>
+		</a>
+
+		<a class="{{#if fouces 'discuz' }} active {{/if}} footer-item _flex-1" href="/discuz/list">
+			<div class="footer-item-wenzi footer-item-2">
+				讨论
+			</div>
+		</a>
+
+		<a class="{{#if fouces 'wd' }} active {{/if}} footer-item _flex-1" href="/home">
+			<div class="footer-item-wenzi footer-item-3">
+			 	我的
+			</div>
+		</a>
+	</div>
+</template>

@@ -1,0 +1,8 @@
+.yy-qrcode{
+	padding: 15px;
+	text-align: center;
+	background: #fff;
+}
+.yy-qrcode img{
+	width: 200px;
+}

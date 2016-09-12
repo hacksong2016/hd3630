@@ -1,0 +1,57 @@
+<template name="home">
+    <div class="page page-with-header-footer home">
+        <header>
+            <div class="header">
+                我
+                <!--   返回键图标  <div  class="left"><i class="fa fa fa-chevron-left"></i></div> -->
+            </div>
+        </header>
+        <div class="banner _flex">
+            <div class="img ">
+                <div style="background-image:url({{user.avatar}});background-size:100% 100%">
+                    <input type="file" id="avatar" />
+                </div>
+            </div>
+            <a href="/home/track">
+                <div class="info _flex-1">
+                    <div class="nickname " style="float:left;"> {{ user.nickname }}   &nbsp;&nbsp;&nbsp;{{ doctor.title }}</div>
+                    {{#if doctor.vaild}}
+                    <div class="home-vaild"></div>
+                    {{/if}}
+                    <div class="point " style="clear:left;">余额 ：{{fix user.balance}} &nbsp;&nbsp;｜&nbsp;&nbsp; 收入 ： {{fix user.income}}</div>
+                </div>
+            </a>
+        </div>
+        
+        <div class="list">
+            <a href="/discuz/host?id={{user._id}}&frt=/home" class="link home-jh"> 个人主页 <i class="fa fa-angle-right"></i></a>
+           <!--  <a href="/discuz/list" class="link home-tl"> 参与讨论组 <i class="fa fa-angle-right"></i></a> -->
+        </div>
+        <div class="list">
+            {{#if doctor.vaild }}
+            <div href="/home/certification" class="link home-zt home-cert"> 认证状态 <b>已认证</b></div>
+            {{else}}
+            <a href="/home/certification" class="link home-zt  home-cert"> 认证状态 <b>未认证</b> <i class="fa fa-angle-right"></i></a> 
+            {{/if}}
+        </div>
+        <div class="list">
+            <a href="/myPerson" class="link home-hz">我的患者 <i class="fa fa-angle-right"></i></a>
+            <a href="/myRecive" class="link home-zl"> 诊疗记录 <i class="fa fa-angle-right"></i></a>
+        </div>
+        <div class="list">
+            <a href="/home/messages" class="link home-hz">我的私信 <i class="fa fa-angle-right"></i></a>
+            <a href="/my/news" class="link home-hz">收藏新闻 <i class="fa fa-angle-right"></i></a>
+            <a href="/home/set" class="link home-hz">设置 <i class="fa fa-angle-right"></i></a>
+            <a href="/home/suggest" class="link home-hz">意见和反馈 <i class="fa fa-angle-right"></i></a>
+        </div>
+        <div class="list-q">
+            <a href="/logout" class="link">退出登陆</a>
+        </div>
+
+
+        <!-- <div class="list">
+            <a href="/home/set" class="link home-xx"> 设置 <i class="fa fa-angle-right"></i></a>
+        </div> -->
+        {{>footer active='wd'}}
+    </div>
+</template>

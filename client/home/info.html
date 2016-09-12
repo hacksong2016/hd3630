@@ -1,0 +1,27 @@
+<template name="homeInfo">
+    <div class="page page-with-header-footer home">
+        <header>
+            <div class="header">
+                个人信息
+                <a href="/home" class="left"><i class="fa fa fa-chevron-left"></i></a>
+            </div>
+        </header>
+        <div class="list" >
+            <div class="link" style="line-height:50px;position:relative;">头像
+                <div class="avatar" style="width:50px;height:50px;position:absolute;top:10px;right:10px;border-radius:50%;background-image:url({{user.avatar}});background-size:100% 100%">
+                    <input type="file" id="avatar" />
+                </div>
+            </div>
+            <a  class="link">姓名{{user.nickname}}</a>
+            <a href="/home/password" class="link">职称</a>
+            <a href="/home/certification" class="link">认证状态 <i class="fa fa-angle-right"></i></a>
+            <a href="/home/password" class="link">性别</a>
+            <a href="/home/nickname" class="link">地区 </a>
+            <a href="/home/password" class="link">医院 </a>
+            <a href="/home/password" class="link">科室 </a>
+        </div>
+        <div class="down">
+            修改个人认证资料请联系客服:<br/>010-56146057
+        </div>
+    </div>
+</template>

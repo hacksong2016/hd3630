@@ -1,0 +1,24 @@
+<template name="item">
+    <header>
+        <div class="header">
+            我的{{fish.fname}}
+        </div>
+    </header>
+    <div class="yy">
+        <div class="yy-avatar" style="background-image:url({{fish.fthumb}})">
+        	<div class="yy-dd">
+        		<div class="yy-kg" ><b>{{fish.fkg}}</b> Kg</div>
+        		<div class="yy-temp" ><b>{{fish.ftemp}}</b> ℃</div>
+        	</div>
+        	
+        </div>
+        <div class="yy-line animated fadeInUp" style="-webkit-animation-delay:.5s">{{ format fish.fcreateAt}}</div>
+        <div class="yy-line yy-blod  animated fadeInUp" style="-webkit-animation-delay:1s">{{fish.fwhere}}</div>
+        <div class="yy-line  animated fadeInUp" style="-webkit-animation-delay:1.5s;padding:15px 0 25px 0">
+            <a href="/zhongchou?id={{fish._id}}" class="yy-phone"><i class="fa fa-ship"></i> 众筹</a>
+            <a href="/paimai?id={{fish._id}}" class="yy-phone"><i class="fa fa-users"></i> 拍卖</a>
+            <a href="/qrcode?id={{fish._id}}" class="yy-phone"><i class="fa fa-qrcode"></i> 转赠</a>
+        </div>
+        <a href="/address?id={{fish._id}}" class="yy-link animated fadeInUp yy-smyu" style="-webkit-animation-delay:2s"><i class="fa fa-phone"></i> 立即预约上门服务 <i class="fa fa-angle-right"></i></a>
+    </div>
+</template>

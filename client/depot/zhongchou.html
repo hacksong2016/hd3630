@@ -1,0 +1,40 @@
+<template name="zhongchou">
+    <header>
+        <div class="header">
+            众筹{{fish.fname}}名人晚宴
+        </div>
+    </header>
+    <div class="yy">
+        <div class="yy-avatar" style="background-image:url(/kefu.jpg)"></div>
+        <div class="yy-line animated fadeInUp" style="-webkit-animation-delay:.5s">你好,我是您的专属顾问</div>
+        <div class="yy-line yy-blod  animated fadeInUp" style="-webkit-animation-delay:1s">李莉</div>
+        <div class="yy-line  animated fadeInUp" style="-webkit-animation-delay:1.5s">请填写一些信息</div>
+    </div>
+    <div class="animated fadeInUp s-pad" style="-webkit-animation-delay:2s">
+        <div class="s-block">
+            <div class="s-title">晚宴时间</div>
+            <div><input id="stime" type="datetime-local"/></div>
+        </div>
+        <div class="s-block">
+            <div class="s-title">选择餐厅</div>
+            <div>
+                <select id="saddress">
+                    <option value="北京孙河52号院3630海钓俱乐部会所">北京孙河52号院3630海钓俱乐部会所</option>
+                </select>
+            </div>
+        </div>
+        <div class="s-block">
+            <div class="s-title">众筹价格</div>
+            <div><input id="sprice" type="tel" placeholder="¥5000" /></div>
+        </div>
+        <div class="s-block">
+            <div class="s-title">拟邀人数</div>
+            <div><input id="snum" type="tel" placeholder="5" /></div>
+        </div>
+    </div>
+    <div class="footer-fix"></div>
+    <div class="se-footer _flex">
+    	<a href="tel:1234567890" class="_flex-1"><i class="fa fa-phone"></i> 联系顾问 </a>
+    	<div class="se-next _flex-1" > 开启众筹 </div>
+    </div>
+</template>

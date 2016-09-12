@@ -1,0 +1,16 @@
+<template name="myNews">
+    <div class="page page-with-header-footer " style="background:#fff">
+         <header>
+            <div class="header">
+                收藏新闻
+                <a href="/home" class="left"><i class="fa fa fa-chevron-left"></i></a>
+            </div>
+        </header>
+        {{#each news}}
+        <a href="/news/item?id={{_id}}" class="mn-item">
+        	{{title}}
+        	<i class="fa fa-angle-right"></i>
+        </a>
+        {{/each }}
+    </div>
+</template>

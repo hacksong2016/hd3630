@@ -1,0 +1,28 @@
+.yy-dd{
+	width: 100px;
+	color: #fff;
+	text-shadow: 0 0 5px #333;
+	line-height: 30px;
+	padding: 5px 10px;
+}
+.yy-link{
+	line-height: 45px;
+	border-top: 1px solid #eee;
+	border-bottom: 1px solid #eee;
+	text-align: left;
+	background: #fff;
+	padding-left: 10px;
+	color: #333;
+	display: block;
+	position: relative;
+}
+.yy-link:active{
+	background: #999;
+}
+.yy-smyu .fa-angle-right{
+	position: absolute;
+	right: 0px;
+	line-height: 45px;
+	font-size: 20px;
+	padding-right: 10px;
+}

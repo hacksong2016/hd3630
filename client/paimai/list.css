@@ -1,0 +1,25 @@
+.pp-user{
+	width: 100%;
+	height: 40px;
+
+}
+.pp-user-avatar{
+	width: 30px;
+	height: 30px;
+	margin-top: 5px;
+	background-size: cover;
+	background-position: center;
+	border-radius: 50%;
+}
+.pp-user-name{
+	padding: 0px 10px;
+	line-height: 40px;
+	font-size: 14px;
+
+}
+.pp-user-price{
+	line-height: 40px;
+	font-size: 14px;
+	color: #999;
+	text-align: right;
+}

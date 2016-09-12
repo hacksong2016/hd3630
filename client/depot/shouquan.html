@@ -1,0 +1,22 @@
+<template name="shouquan">
+	<header>
+		<div class="header">
+			接受转赠{{fish.fname}}
+			<a class="left" href="/depot"><i class="fa fa-angle-left"></i></a>
+		</div>
+	</header>
+	 <div class="yy">
+        <div class="yy-avatar" style="background-image:url({{fish.fthumb}})">
+        	<div class="yy-dd">
+        		<div class="yy-kg" ><b>{{fish.fkg}}</b> Kg</div>
+        		<div class="yy-temp" ><b>{{fish.ftemp}}</b> ℃</div>
+        	</div>
+        	
+        </div>
+        <div class="yy-line animated fadeInUp" style="-webkit-animation-delay:.5s">{{ format fish.fcreateAt}}</div>
+        <div class="yy-line yy-blod  animated fadeInUp" style="-webkit-animation-delay:1s">{{fish.fwhere}}</div>
+        <div class="yy-line  animated fadeInUp" style="-webkit-animation-delay:1.5s;padding:15px 0 25px 0;">
+            <div class="yy-phone sq-btn" style="width:160px;"><i class="fa fa-users"></i> 确认接受 </div>
+        </div>
+    </div>
+</template>

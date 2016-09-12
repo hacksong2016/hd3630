@@ -1,0 +1,36 @@
+.hc-tips{
+	width:100%;
+	text-align: center;
+	line-height:25px;
+	padding:15px 15px;
+	color:#bbb;
+	font-size:14px;
+}
+.hc-upload{
+	width:100%;
+	height:160px;
+	border:1px  dashed #bbb;
+	margin-bottom: 20px;
+	position:relative;
+	background-size: cover;
+	background-position: center;
+}
+.tCertification{
+	width:100%;
+	text-align: center;
+	line-height:25px;
+	padding:15px 15px;
+	color:#bbb;
+	font-size:14px;
+
+}
+.hc-upload input{
+	position: absolute;
+	right:0px;
+	top:0px;
+	display:block;
+	    -webkit-appearance: none;
+	    width:100%;
+	    height:100%;
+	    opacity: 0;
+}

@@ -1,0 +1,72 @@
+.wxbg{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: #f3f3f3;
+}
+.wx_foot{
+    position: absolute;
+    width: 100%;
+    height: 45px;
+    background: #eee;
+    left: 0px;
+    bottom: 0px;
+    border-top: 1px solid #ccc;
+    font-size: 14px;
+    color: #666;
+}
+.wx_left{
+    width: 45px;
+    text-align: center;
+}
+.wx_left i{
+    line-height: 45px;
+
+}
+.wx_menu:active{
+    background: #ddd;
+}
+.wx_menu{
+    border-left: 1px solid #ccc;
+    text-align: center;
+    height: 45px;
+    line-height: 45px;
+}
+.wx-message{
+    padding: 15px;
+    padding-left: 50px;
+    position: relative
+}
+.wx-green{
+    background: #41db66;
+    padding: 10px;
+    font-size: 14px;
+    line-height: 20px;
+    border-radius: 5px;
+    position: relative;
+}
+.wx-green:before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: -17px;
+    width: 0;
+    height: 0px;
+    border-left: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-right: 10px solid #41db66;
+}
+.wx-avatar{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    background-size: cover;
+    background-color: #fff;
+    border-radius: 5px;
+}
