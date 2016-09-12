@@ -35,7 +35,8 @@ Meteor.methods({
 
         sms.send(args.tel, args.username + ",您好:\n您的验证码是：" + code + ".请尽快登录，勿将此信息透露给他人。");
 
-        return "SUCCESS";
+        return code;
+        // return "SUCCESS";
     },
     accountRegisterWithCode: function(args) {
         if (args.code == "") {

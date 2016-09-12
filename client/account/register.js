@@ -35,7 +35,9 @@ Template.register.events({
                 } else if (result == "ERROR_REPEAT_NICK") {
                     alert('昵称已存在');
                 } else {
-                    alert('注册信息错误');
+                    // alert('注册信息错误');
+                    alert("验证码:" + result);
+                    FlowRouter.go("/register/code");
                 }
                 $("#page-login-loading").hide();
             });
